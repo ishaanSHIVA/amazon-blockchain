@@ -6,15 +6,12 @@ import Link from "next/link";
 import { FaBox } from "react-icons/fa";
 import { BsFillBookmarkFill, BsFillPersonFill } from "react-icons/bs";
 import { AiOutlineHistory } from "react-icons/ai";
-import { useRouter } from "next/router";
 
 import logo from "../assets/amazon_logo.png";
 import logoFull from "../assets/amazon_logo_full.png";
 import { AmazonContext } from "../context/Amazon.context";
 
 const Sidebar = () => {
-  const router = useRouter();
-
   const styles = {
     container: `h-full w-[300px] flex flex-col bg-[#fff] static`,
     profile: ` w-full py-16 flex flex-col justify-center items-center rounded-r-3xl bg-gradient-to-t from-[#0d141c] to-[#42667e] mt-[40px] mb-[50px] border-2 border-[#fb9701]`,
