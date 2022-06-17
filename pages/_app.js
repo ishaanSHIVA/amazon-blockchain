@@ -9,9 +9,9 @@ function MyApp({ Component, pageProps }) {
       serverUrl={"https://vdjxbweq6izd.usemoralis.com:2053/server"}
       appId={process.env.NEXT_PUBLIC_MORALIS_APP_ID}
     >
-      <AmazonProvider>
+      {/* <AmazonProvider> */}
         <Component {...pageProps} />
-      </AmazonProvider>
+      {/* </AmazonProvider> */}
     </MoralisProvider>
   );
 }
